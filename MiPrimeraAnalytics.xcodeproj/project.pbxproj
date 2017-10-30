@@ -14,9 +14,12 @@
 		7D78B6A51FA67AE10066C9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D78B6A41FA67AE10066C9B5 /* Assets.xcassets */; };
 		7D78B6A81FA67AE10066C9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D78B6A61FA67AE10066C9B5 /* LaunchScreen.storyboard */; };
 		7D78B6AB1FA67AE10066C9B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D78B6AA1FA67AE10066C9B5 /* main.m */; };
+		D87D1B7A262BE8182F620A15 /* libPods-MiPrimeraAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3627A0E195B7FDC76828B4D0 /* libPods-MiPrimeraAnalytics.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3627A0E195B7FDC76828B4D0 /* libPods-MiPrimeraAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MiPrimeraAnalytics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E69556B43414D9668E0B899 /* Pods-MiPrimeraAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiPrimeraAnalytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiPrimeraAnalytics/Pods-MiPrimeraAnalytics.release.xcconfig"; sourceTree = "<group>"; };
 		7D78B6951FA67AE00066C9B5 /* MiPrimeraAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiPrimeraAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D78B6981FA67AE10066C9B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7D78B6991FA67AE10066C9B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		7D78B6A71FA67AE10066C9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D78B6A91FA67AE10066C9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D78B6AA1FA67AE10066C9B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3196D5A15B8437EFCCD5823 /* Pods-MiPrimeraAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiPrimeraAnalytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiPrimeraAnalytics/Pods-MiPrimeraAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87D1B7A262BE8182F620A15 /* libPods-MiPrimeraAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A33B21D643A19F91852AA4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3627A0E195B7FDC76828B4D0 /* libPods-MiPrimeraAnalytics.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6864074C0729554A79D3F605 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3196D5A15B8437EFCCD5823 /* Pods-MiPrimeraAnalytics.debug.xcconfig */,
+				5E69556B43414D9668E0B899 /* Pods-MiPrimeraAnalytics.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7D78B68C1FA67AE00066C9B5 = {
 			isa = PBXGroup;
 			children = (
 				7D78B6971FA67AE00066C9B5 /* MiPrimeraAnalytics */,
 				7D78B6961FA67AE00066C9B5 /* Products */,
+				6864074C0729554A79D3F605 /* Pods */,
+				1A33B21D643A19F91852AA4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +84,8 @@
 		7D78B6971FA67AE00066C9B5 /* MiPrimeraAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				7D78B6981FA67AE10066C9B5 /* AppDelegate.h */,
-				7D78B6991FA67AE10066C9B5 /* AppDelegate.m */,
-				7D78B69B1FA67AE10066C9B5 /* ViewController.h */,
-				7D78B69C1FA67AE10066C9B5 /* ViewController.m */,
+				7D78B6B51FA67B8A0066C9B5 /* Main */,
+				7D78B6B41FA67B790066C9B5 /* Controllers */,
 				7D78B69E1FA67AE10066C9B5 /* Main.storyboard */,
 				7D78B6A41FA67AE10066C9B5 /* Assets.xcassets */,
 				7D78B6A61FA67AE10066C9B5 /* LaunchScreen.storyboard */,
@@ -74,6 +96,24 @@
 			path = MiPrimeraAnalytics;
 			sourceTree = "<group>";
 		};
+		7D78B6B41FA67B790066C9B5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D78B69C1FA67AE10066C9B5 /* ViewController.m */,
+				7D78B69B1FA67AE10066C9B5 /* ViewController.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7D78B6B51FA67B8A0066C9B5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7D78B6991FA67AE10066C9B5 /* AppDelegate.m */,
+				7D78B6981FA67AE10066C9B5 /* AppDelegate.h */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D78B6AE1FA67AE10066C9B5 /* Build configuration list for PBXNativeTarget "MiPrimeraAnalytics" */;
 			buildPhases = (
+				6F68EFD12F0B0379BAC8B0D1 /* [CP] Check Pods Manifest.lock */,
 				7D78B6911FA67AE00066C9B5 /* Sources */,
 				7D78B6921FA67AE00066C9B5 /* Frameworks */,
 				7D78B6931FA67AE00066C9B5 /* Resources */,
+				02858DF837A387B35B9A99A4 /* [CP] Embed Pods Frameworks */,
+				746A4F9EB4EA7CB720AD5428 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +182,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02858DF837A387B35B9A99A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiPrimeraAnalytics/Pods-MiPrimeraAnalytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F68EFD12F0B0379BAC8B0D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiPrimeraAnalytics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		746A4F9EB4EA7CB720AD5428 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiPrimeraAnalytics/Pods-MiPrimeraAnalytics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D78B6911FA67AE00066C9B5 /* Sources */ = {
@@ -280,6 +374,7 @@
 		};
 		7D78B6AF1FA67AE10066C9B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3196D5A15B8437EFCCD5823 /* Pods-MiPrimeraAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,6 +388,7 @@
 		};
 		7D78B6B01FA67AE10066C9B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E69556B43414D9668E0B899 /* Pods-MiPrimeraAnalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
