@@ -84,10 +84,17 @@
                                 <rect key="frame" x="0.0" y="126" width="375" height="541"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="wWi-SD-bRk" id="rNz-8v-Bkw"/>
+                                    <outlet property="delegate" destination="wWi-SD-bRk" id="LxZ-gv-gmw"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tblMain" destination="lzh-nL-zeJ" id="siJ-ff-T4m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwk-ED-CLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

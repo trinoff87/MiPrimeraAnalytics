@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ListController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *tblMain;
 
 @end
