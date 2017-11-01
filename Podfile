@@ -5,5 +5,7 @@ target 'MiPrimeraAnalytics' do
 
   # Pods for MiPrimeraAnalytics
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'GoogleSignIn'
 platform:ios, '11.0'
 end
