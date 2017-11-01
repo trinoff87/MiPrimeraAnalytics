@@ -11,7 +11,7 @@
 @import Firebase;
 @import GoogleSignIn;
 
-@interface ViewController : UIViewController<GIDSignInUIDelegate>
+@interface Home : UIViewController<GIDSignInUIDelegate>
 
 - (IBAction)signInAction:(id)sender;
 - (IBAction)signOutAction:(id)sender;
