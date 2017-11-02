@@ -94,11 +94,52 @@
                     </view>
                     <connections>
                         <outlet property="tblMain" destination="lzh-nL-zeJ" id="siJ-ff-T4m"/>
+                        <segue destination="FNa-3k-ctv" kind="modal" identifier="segueID" id="dap-F2-4YI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwk-ED-CLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="563.5" y="130.5"/>
+            <point key="canvasLocation" x="528" y="131"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="Vy4-L0-9yX">
+            <objects>
+                <viewController id="FNa-3k-ctv" customClass="DetailController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A8e-aT-PNd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="QaP-iw-dcd">
+                                <rect key="frame" x="16" y="91" width="343" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e0u-aV-lEC">
+                                <rect key="frame" x="71" y="436" width="218" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Comprar"/>
+                                <connections>
+                                    <action selector="actionBuy:" destination="FNa-3k-ctv" eventType="touchUpInside" id="OOc-vS-S6c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r2w-ex-8bu">
+                                <rect key="frame" x="43" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Atras"/>
+                                <connections>
+                                    <action selector="actionBack:" destination="FNa-3k-ctv" eventType="touchUpInside" id="Y4M-c9-bsk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k1i-Yx-YAL"/>
+                    <connections>
+                        <outlet property="imgItem" destination="QaP-iw-dcd" id="aZF-jt-e7R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrb-Ja-G9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121.5" y="130.5"/>
         </scene>
     </scenes>
 </document>

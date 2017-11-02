@@ -7,6 +7,7 @@
 //
 
 #import "ListController.h"
+#import "DetailController.h"
 #import "cellMainTable.h"
 
 @interface ListController ()
@@ -14,6 +15,8 @@
 @property NSMutableArray *itemNames;
 
 @property NSMutableArray *itemImages;
+
+@property NSString * selectedImg;
 
 @end
 
@@ -68,7 +71,14 @@
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //Pending
+    self.selectedImg =  self.itemImages[indexPath.row];
+    [self performSegueWithIdentifier:@"segueID" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    DetailController *detailController = segue.destinationViewController;
+    detailController.image = self.selectedImg;
 }
 
 /*
