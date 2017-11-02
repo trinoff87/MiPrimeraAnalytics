@@ -18,6 +18,8 @@
 
 @property NSString * selectedImg;
 
+@property NSString * selectedItem;
+
 @end
 
 @implementation ListController
@@ -72,6 +74,7 @@
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedImg =  self.itemImages[indexPath.row];
+    self.selectedItem = self.itemNames[indexPath.row];
     [self performSegueWithIdentifier:@"segueID" sender:self];
 }
 
@@ -79,6 +82,7 @@
 {
     DetailController *detailController = segue.destinationViewController;
     detailController.image = self.selectedImg;
+    detailController.label = self.selectedItem;
 }
 
 /*

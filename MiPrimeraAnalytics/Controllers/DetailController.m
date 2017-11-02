@@ -16,10 +16,13 @@
 
 @synthesize imgItem;
 @synthesize image;
+@synthesize lblItem;
+@synthesize label;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     imgItem.image      = [UIImage imageNamed:self.image];
+    lblItem.text      = label;
     // Do any additional setup after loading the view.
 }
 
