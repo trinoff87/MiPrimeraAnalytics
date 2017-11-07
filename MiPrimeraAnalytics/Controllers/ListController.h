@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@import Firebase;
+@import GoogleSignIn;
+
 @interface ListController : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *tblMain;
 

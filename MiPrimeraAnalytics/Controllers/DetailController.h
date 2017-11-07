@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@import Firebase;
+@import GoogleSignIn;
+
 @interface DetailController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *imgItem;
 @property (weak, nonatomic) IBOutlet UILabel *lblItem;

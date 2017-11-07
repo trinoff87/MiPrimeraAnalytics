@@ -73,6 +73,11 @@
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [FIRAnalytics logEventWithName:@"ViewItem_button"
+                        parameters:@{
+                                     @"name": @"Google",
+                                     @"full_text": @"Gmail"
+                                     }];
     self.selectedImg =  self.itemImages[indexPath.row];
     self.selectedItem = self.itemNames[indexPath.row];
     [self performSegueWithIdentifier:@"segueID" sender:self];

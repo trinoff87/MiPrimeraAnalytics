@@ -25,12 +25,17 @@
     lblItem.text      = label;
     // Do any additional setup after loading the view.
 }
+- (IBAction)btnBuyAction:(id)sender {
+    [FIRAnalytics logEventWithName:@"BuyItem_button"
+                        parameters:@{
+                                     @"name": @"Google",
+                                     @"full_text": @"Gmail"
+                                     }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)actionBuy:(id)sender {
 }
 - (IBAction)actionBack:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
